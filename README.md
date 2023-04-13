@@ -17,7 +17,7 @@ You can run the following to see a replay of what I ran to setup and use the tor
 scriptreplay --timing time_tor_test.tm tor_test
 ```
 
-> **__Tip:__** You can run the below on your recording (tor_test for me) to get what command where ran quickly
+> **__Tip:__** You can run the below on your recording (tor_test for me) to get what command was ran quickly
 
 ```bash
 grep "^\#\s\w" tor_test
