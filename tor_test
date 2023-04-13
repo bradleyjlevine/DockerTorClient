@@ -1,0 +1,382 @@
+Script started on 2023-04-13 21:51:08+00:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="209" LINES="78"]
+# id
+uid=0(root) gid=0(root) groups=0(root)
+# groups
+root
+# whoami
+root
+# hostname
+torclient
+# apt update -y
+[33m0% [Working][0m            Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+            Hit:2 http://security.ubuntu.com/ubuntu jammy-security InRelease
+[33m0% [Working][0m[33m0% [Waiting for headers][0m                        Hit:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+[33m0% [Connecting to archive.ubuntu.com][0m[33m                                     0% [Waiting for headers][0m[33m0% [Waiting for headers][0m                        Hit:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+[33m                        0% [Working][0m[33m20% [Working][0m             Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... 6%Reading package lists... 7%Reading package lists... 7%Reading package lists... 70%Reading package lists... 70%Reading package lists... 71%Reading package lists... 71%Reading package lists... 76%Reading package lists... 76%Reading package lists... 81%Reading package lists... 81%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 90%Reading package lists... 90%Reading package lists... 95%Reading package lists... 95%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 2%Reading state information... Done
+2 packages can be upgraded. Run 'apt list --upgradable' to see them.
+# apt install -y iptuils-ping^[[D              utils     utils-ping net-tools curl dnsutils tor
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... 6%Reading package lists... 7%Reading package lists... 7%Reading package lists... 70%Reading package lists... 70%Reading package lists... 71%Reading package lists... 71%Reading package lists... 76%Reading package lists... 76%Reading package lists... 81%Reading package lists... 81%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 90%Reading package lists... 90%Reading package lists... 95%Reading package lists... 95%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 2%Reading state information... Done
+net-tools is already the newest version (1.60+git20181103.0eebece-1ubuntu5).
+tor is already the newest version (0.4.6.10-1).
+curl is already the newest version (7.81.0-1ubuntu1.10).
+dnsutils is already the newest version (1:9.18.12-0ubuntu0.22.04.1).
+The following additional packages will be installed:
+  libcap2-bin libpam-cap
+The following NEW packages will be installed:
+  iputils-ping libcap2-bin libpam-cap
+0 upgraded, 3 newly installed, 0 to remove and 2 not upgraded.
+Need to get 76.8 kB of archives.
+After this operation, 280 kB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu jammy/main amd64 libcap2-bin amd64 1:2.44-1build3 [26.0 kB]
+[33m4% [1 libcap2-bin 4080 B/26.0 kB 16%][0m[33m                                     34% [Working][0m             Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 iputils-ping amd64 3:20211215-1 [42.9 kB]
+[33m36% [2 iputils-ping 2620 B/42.9 kB 6%][0m[33m                                      85% [Working][0m             Get:3 http://archive.ubuntu.com/ubuntu jammy/main amd64 libpam-cap amd64 1:2.44-1build3 [7932 B]
+[33m89% [3 libpam-cap 4081 B/7932 B 51%][0m[33m                                    100% [Working][0m              Fetched 76.8 kB in 0s (319 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;77r8[1ASelecting previously unselected package libcap2-bin.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5252 files and directories currently installed.)
+Preparing to unpack .../libcap2-bin_1%3a2.44-1build3_amd64.deb ...
+7[78;0f[42m[30mProgress: [  0%][49m[39m [...........................................................................................................................................................................................] 87[78;0f[42m[30mProgress: [  8%][49m[39m [##############.............................................................................................................................................................................] 8Unpacking libcap2-bin (1:2.44-1build3) ...
+7[78;0f[42m[30mProgress: [ 15%][49m[39m [############################...............................................................................................................................................................] 8Selecting previously unselected package iputils-ping.
+Preparing to unpack .../iputils-ping_3%3a20211215-1_amd64.deb ...
+7[78;0f[42m[30mProgress: [ 23%][49m[39m [###########################################................................................................................................................................................] 8Unpacking iputils-ping (3:20211215-1) ...
+7[78;0f[42m[30mProgress: [ 31%][49m[39m [#########################################################..................................................................................................................................] 8Selecting previously unselected package libpam-cap:amd64.
+Preparing to unpack .../libpam-cap_1%3a2.44-1build3_amd64.deb ...
+7[78;0f[42m[30mProgress: [ 38%][49m[39m [#######################################################################....................................................................................................................] 8Unpacking libpam-cap:amd64 (1:2.44-1build3) ...
+7[78;0f[42m[30mProgress: [ 46%][49m[39m [######################################################################################.....................................................................................................] 8Setting up libcap2-bin (1:2.44-1build3) ...
+7[78;0f[42m[30mProgress: [ 54%][49m[39m [####################################################################################################.......................................................................................] 87[78;0f[42m[30mProgress: [ 62%][49m[39m [###################################################################################################################........................................................................] 8Setting up libpam-cap:amd64 (1:2.44-1build3) ...
+7[78;0f[42m[30mProgress: [ 69%][49m[39m [#################################################################################################################################..........................................................] 8debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 78.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.34.0 /usr/local/share/perl/5.34.0 /usr/lib/x86_64-linux-gnu/perl5/5.34 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl-base /usr/lib/x86_64-linux-gnu/perl/5.34 /usr/share/perl/5.34 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+7[78;0f[42m[30mProgress: [ 77%][49m[39m [###############################################################################################################################################............................................] 8Setting up iputils-ping (3:20211215-1) ...
+7[78;0f[42m[30mProgress: [ 85%][49m[39m [##############################################################################################################################################################.............................] 87[78;0f[42m[30mProgress: [ 92%][49m[39m [############################################################################################################################################################################...............] 8
+7[0;78r8[1A[J# dig google.com
+
+; <<>> DiG 9.18.12-0ubuntu0.22.04.1-Ubuntu <<>> google.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22285
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 0de54466b060699a (echoed)
+;; QUESTION SECTION:
+;google.com.			IN	A
+
+;; ANSWER SECTION:
+google.com.		5	IN	A	142.250.80.78
+
+;; Query time: 50 msec
+;; SERVER: 10.96.0.10#53(10.96.0.10) (UDP)
+;; WHEN: Thu Apr 13 21:52:20 UTC 2023
+;; MSG SIZE  rcvd: 77
+
+# ping googlec .com
+PING google.com (142.250.80.78) 56(84) bytes of data.
+64 bytes from 142.250.80.78 (142.250.80.78): icmp_seq=1 ttl=36 time=14.5 ms
+64 bytes from 142.250.80.78 (142.250.80.78): icmp_seq=2 ttl=36 time=15.7 ms
+64 bytes from 142.250.80.78 (142.250.80.78): icmp_seq=3 ttl=36 time=13.9 ms
+^C
+--- google.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 13.902/14.687/15.697/0.749 ms
+# service tor start
+ * Starting tor daemon...       [209G [203G[ OK ]
+# service tor status
+ * tor is running
+# netstat
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      1 torclient:43928         5.2.70.141:9001         SYN_SENT   
+tcp        0      0 torclient:39438         185.125.190.39:80       TIME_WAIT  
+tcp        0      0 torclient:39426         185.125.190.39:80       TIME_WAIT  
+tcp        0      0 torclient:49842         91.189.91.39:80         TIME_WAIT  
+tcp        0      1 torclient:43746         104.244.72.7:9000       SYN_SENT   
+tcp        0      0 torclient:37174         185.203.116.252:443     ESTABLISHED
+Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+# curl --socks5-hostname localhost:9050 https; ://check.torproject.org/ 0v  -v
+*   Trying 127.0.0.1:9050...
+* SOCKS5 connect to check.torproject.org:443 (remotely resolved)
+* SOCKS5 request granted.
+* Connected to (nil) (127.0.0.1) port 9050 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+*  CAfile: /etc/ssl/certs/ca-certificates.crt
+*  CApath: /etc/ssl/certs
+* TLSv1.0 (OUT), TLS header, Certificate Status (22):
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+* TLSv1.2 (IN), TLS header, Certificate Status (22):
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+* TLSv1.2 (IN), TLS header, Finished (20):
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+* TLSv1.2 (OUT), TLS header, Finished (20):
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+* TLSv1.2 (OUT), TLS header, Supplemental data (23):
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384
+* ALPN, server accepted to use http/1.1
+* Server certificate:
+*  subject: CN=check.torproject.org
+*  start date: Mar 18 00:54:45 2023 GMT
+*  expire date: Jun 16 00:54:44 2023 GMT
+*  subjectAltName: host "check.torproject.org" matched cert's "check.torproject.org"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* TLSv1.2 (OUT), TLS header, Supplemental data (23):
+> GET / HTTP/1.1
+> Host: check.torproject.org
+> User-Agent: curl/7.81.0
+> Accept: */*
+> 
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+* old SSL session ID is stale, removing
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Date: Thu, 13 Apr 2023 21:54:18 GMT
+< Server: Apache
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: sameorigin
+< X-Xss-Protection: 1
+< Referrer-Policy: no-referrer
+< Strict-Transport-Security: max-age=15768000; preload
+< Content-Type: text/html; charset=utf-8
+< Vary: Accept-Encoding
+< Transfer-Encoding: chunked
+< 
+<!doctype html>
+<html lang="en_US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    
+      Congratulations. This browser is configured to use Tor.
+    
+</title>
+  <link rel="icon" type="image/x-icon" href="/torcheck/img/tor-not.png" />
+  <style>
+    html { height: 100%; }
+    body {
+      height: 100%;
+      text-align: center;
+      font-family: Helvetica, sans-serif;
+      margin: 0;
+    }
+    h1 { font-size: 2em; }
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { margin: 0; padding: 0; }
+    li {
+      text-align: left;
+      display: inline;
+      list-style-type: none;
+      margin: 0;
+    }
+    .content {
+      padding: 4em;
+    }
+    .foot {
+      padding: 2em 4em;
+      clear: both;
+    }
+    .head {
+      background-color: #85559f;
+      padding: 0.8em 0;
+      color: #fff;
+    }
+    .project {
+      margin: 0;
+      font-size: 0.8em;
+    }
+    
+  .on { color: green; }
+  .off { color: red; }
+  .not { color: goldenrod; }
+  .mid { margin: 3em 0; }
+  .mid a {
+    text-decoration: underline;
+  }
+  .small { font-size: 0.8em; }
+  .security {
+    margin: 2em 0;
+    padding: 1em;
+    font-size: 1.4em;
+    color: goldenrod;
+    background-color: ghostwhite;
+    border-radius: 5px;
+  }
+  .security a {
+    color: goldenrod;
+    text-decoration: underline;
+  }
+  .onion {
+    width: 128px;
+    height: 128px;
+    border: 0;
+    text-decoration: none;
+  }
+  #js {
+    font-size: 0.8em;
+  }
+  #donate {
+    background-color: dodgerblue;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 0.6em 2.4em;
+    border-radius: 0.2em;
+    display: inline-block;
+  }
+  #links {
+    margin-top: 0.6em;
+  }
+  #links li:after {
+    content: "|";
+    padding: 0 0.2em;
+  }
+  #links li:last-child:after {
+    content: "";
+    padding: 0;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="head">
+    
+<form action="/" method="get" id="lang">
+  
+  
+  <label for="lang" class="small">This page is also available in the following languages:</label>
+  <select id="cl" name="lang">
+    
+    
+      <option value="en_US" selected="selected">English</option>
+    
+      <option value="es" >Español</option>
+    
+      <option value="es_AR" >Español (Argentina)</option>
+    
+      <option value="fi" >Suomi</option>
+    
+      <option value="fr" >Français</option>
+    
+      <option value="ga" >Gaeilge</option>
+    
+      <option value="he" >עברית</option>
+    
+      <option value="hu" >Magyar</option>
+    
+      <option value="id" >Bahasa Indonesia</option>
+    
+      <option value="mk" >македонски јазик</option>
+    
+      <option value="th" >ไทย</option>
+    
+      <option value="tr" >Türkçe</option>
+    
+      <option value="zh_CN" >中文简体</option>
+    
+  </select>
+  <input type="submit" value="Go" />
+</form>
+
+  </div>
+  <div class="content">
+    
+  
+    <img src="/torcheck/img/tor-not.png" class="onion" />
+  
+  <h1 class="not">
+    
+      Congratulations. This browser is configured to use Tor.
+    
+  </h1>
+  <p>Your IP address appears to be:  <strong>185.220.103.114</strong></p>
+  
+      
+        
+          <p class="security">
+            However, it does not appear to be Tor Browser.<br />
+            <a href="https://www.torproject.org/download/">Click here to go to the download page</a>
+          </p>
+        
+      
+  
+  <p class="mid">
+    
+      Please refer to the <a href="https://www.torproject.org/">Tor website</a> for further information about using Tor safely.  You are now free to browse the Internet anonymously. For more information about this exit relay, see: <a href="https://metrics.torproject.org/rs.html#search/185.220.103.114">Relay Search</a>.
+    
+  </p>
+  <a id="donate" href="https://donate.torproject.org/">Donate to Support Tor</a>
+  <ul id="links">
+    <li>
+* TLSv1.2 (IN), TLS header, Supplemental data (23):
+      <a href="https://tor.stackexchange.com/">Tor Q&amp;A Site</a>
+    </li>
+    <li>
+      <a href="https://community.torproject.org/">Volunteer</a>
+    </li>
+    <li>
+      <a href="https://community.torproject.org/relay/">Run a Relay</a>
+    </li>
+    <li>
+      <a href="https://support.torproject.org/faq/staying-anonymous/">Stay Anonymous</a>
+    </li>
+  </ul>
+
+  </div>
+  <div class="foot">
+    <p class="project">The Tor Project is a US 501(c)(3) non-profit dedicated to the research, development, and education of online anonymity and privacy. <a href="https://www.torproject.org/about/history/">Learn More &raquo;</a></p>
+    
+<p id="js">
+  <script>
+    
+    var a = document.createElement("a");
+    a.href = "https://support.torproject.org/#tbb-34";
+    var c = document.createTextNode("JavaScript is enabled.");
+    a.appendChild(c);
+    document.getElementById("js").appendChild(a);
+    
+    document.getElementById("cl").addEventListener("change", function () {
+      document.getElementById("lang").submit();
+    });
+  </script>
+  <noscript>JavaScript is disabled.</noscript>
+</p>
+
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+* Connection #0 to host (nil) left intact
+# 
+
+Script done on 2023-04-13 21:54:23+00:00 [COMMAND_EXIT_CODE="0"]
